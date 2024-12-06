@@ -1,0 +1,15 @@
+{
+  "name": "safe-reality.eth-fusionorder",
+  "version": "1.0.0",
+  "main": "SafeFusionOrder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@1inch/fusion-sdk": "^2.1.6",
+    "ethers": "^6.13.4"
+  }
+}
