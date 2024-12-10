@@ -87,11 +87,11 @@ const transactionBatch = [
             [build, extension, {
                 oracle: '0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6', // USDC to USD
                 originalAnswer: await provider.send('eth_call', [{to: '0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6', data: '0x50d25bcd'}]), // call latestAnswer()
-                ttl: orderDelay
+                ttl: 86400n // 1 day
             }, {
                 oracle: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419', // ETH to USD
                 originalAnswer: await provider.send('eth_call', [{to: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419', data: '0x50d25bcd'}]), // call latestAnswer()
-                ttl: orderDelay
+                ttl: 3600n // 1 hour
             }]
         ),
         value: '0x00',
